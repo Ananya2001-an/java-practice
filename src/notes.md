@@ -1,3 +1,37 @@
+### Most used Java methods
+- `System.out.println()` - prints the output on the console and adds a new line at the end.
+- `System.out.print()` - prints the output on the console and doesn't add a new line at the end.
+- `<array>.length` - returns the length of the array.
+- `<str>.length()` - returns the length of the string.
+- `<array>.add(ele)` - adds an element to the array.
+- `<array>.remove(ele)` - removes an element from the array.
+- `<array>.get(index)` - returns the element at the specified index.
+- `<array>.set(index, ele)` - sets the element at the specified index.
+- `<array>.clear()` - removes all the elements from the array.
+- `<array>.isEmpty()` - returns true if the array is empty else returns false.
+- `<array>.contains(ele)` - returns true if the array contains the specified element else returns false.
+- `<array>.indexOf(ele)` - returns the index of the specified element in the array.
+- `<array>.lastIndexOf(ele)` - returns the last index of the specified element in the array.
+- `<array>.toArray()` - converts the array to an array of objects.
+- `<array>.toString()` - converts the array to a string.
+- `<array>.clone()` - returns a copy of the array.
+- `<array>.sort()` - sorts the array in ascending order.
+- `<array>.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
+> ArrayList also has all the above methods of array. So can say <arraylist>.add() and so on.
+- For printing arraylist to the screen no need to call toString() method. Just use `System.out.println(<arraylist>)`.
+- 
+- `Arrays.toString()` - prints the array in a readable format.
+- `Arrays.sort()` - sorts the array in ascending order.
+- `Arrays.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
+
+### Most used Java Packages/Classes
+- `Scanner` class from `java.util` package
+- `Arrays` class from `java.util` package
+- `ArrayList` class from `java.util` package
+- `Math` class from `java.lang` package (default)
+- `String` class from `java.lang` package (default)
+- `Integer` class from `java.lang` package (default)
+
 ### Notes on Java
 - Java is a procedural as well as an object-oriented language.
 - It's a statically typed language.
@@ -19,5 +53,13 @@
 - Shadowing is when a variable in a local scope has the same name as a variable in an outer scope. The local variable shadows the outer variable.
 - Variable Arguments (varargs) are a feature that allows you to pass an arbitrary number of arguments to a method. Denoted by three dots (...), varargs are used when you don't know how many arguments will be passed to a method, or if you don't want to create a separate parameter for each argument.
 - varargs should be the last parameter in a method's parameter list.
-- Some packages that you need to import are:
-  - `Scanner` class from `java.util` package
+- array objects are in heap and heap objects are not continuous in memory. So array objects may not be continuous in memory.
+- Reference variables are created at compile time but the objects are created at runtime i.e. dynamic memory allocation(DMA).
+- "null" can be only assigned to reference variables and not primitive variables.
+- Math class is available in java.lang package that means it's available by default.
+- int[] arr can be also written as int arr[]. But the first one is preferred.
+- Constructors are used to initialize the instance variables of a class. They are written as `<class_name_as_return_type>() {}`.
+- final keyword is used to make a variable constant. It can't be changed once initialized.
+- if an object is declared final then it can't be changed once initialized. Meaning the values of its properties can be changed but the object itself can't be changed. Can't be reassigned.
+- if a method is declared final then it can't be overridden in the child class.
+- 
