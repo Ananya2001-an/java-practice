@@ -8,5 +8,16 @@
 - The public class name should be the same name as the file name.
 - java. lang packages are by default imported in the java class by the JVM
 - One can use wrapper classes like Integer instead of primitive datatypes like int to add more functionality to the variables.
+- Java supports unicode values meaning that it can support any language in the world.
+- "==" is used to compare the values of two variables. It is used to compare the reference of two objects. To compare the values of two objects, we use the `equals()` method. Like `str1.equals(str2)`.
+- Any function inside a static function also has to be static. Basically, a static function can only call other static functions. And even variables inside a static function have to be static.
+- Primitive datatypes are stored in the stack while objects are stored in the heap.
+- Primitive datatypes are passed by value while objects are passed by reference.
+- References in Java abstract memory management, providing safety and simplicity by preventing common memory-related issues.
+- Java abstracts away memory management. You create objects using the new keyword, and Java's garbage collector automatically reclaims memory when objects are no longer reachable.
+- A reference points to an object in memory, but you don't directly manipulate memory addresses like in C.
+- Shadowing is when a variable in a local scope has the same name as a variable in an outer scope. The local variable shadows the outer variable.
+- Variable Arguments (varargs) are a feature that allows you to pass an arbitrary number of arguments to a method. Denoted by three dots (...), varargs are used when you don't know how many arguments will be passed to a method, or if you don't want to create a separate parameter for each argument.
+- varargs should be the last parameter in a method's parameter list.
 - Some packages that you need to import are:
   - `Scanner` class from `java.util` package
