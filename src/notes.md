@@ -19,7 +19,37 @@
 - `<array>.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
 > ArrayList also has all the above methods of array. So can say <arraylist>.add() and so on.
 - For printing arraylist to the screen no need to call toString() method. Just use `System.out.println(<arraylist>)`.
-- 
+- `<hashmap>.put(key, value)` - adds a key-value pair to the hashmap.
+- `<hashmap>.get(key)` - returns the value of the specified key.
+- `<hashmap>.remove(key)` - removes the key-value pair from the hashmap.
+- `<hashmap>.containsKey(key)` - returns true if the hashmap contains the specified key else returns false.
+- `<hashmap>.containsValue(value)` - returns true if the hashmap contains the specified value else returns false.
+- `<hashmap>.keySet()` - returns a set of all the keys in the hashmap.
+- `<hashmap>.values()` - returns a collection of all the values in the hashmap.
+- `<hashmap>.entrySet()` - returns a set of all the key-value pairs in the hashmap.
+- `for(Map.Entry m: <hashmap>.entrySet())` - for iterating over the hashmap.
+- `<hashmap_entry>.getKey()` - returns the key of the specified key-value pair.
+- `<hashmap_entry>.getValue()` - returns the value of the specified key-value pair.
+- `<hashmap>.clear()` - removes all the key-value pairs from the hashmap.
+- `<hashmap>.isEmpty()` - returns true if the hashmap is empty else returns false.
+- `<hashmap>.size()` - returns the number of key-value pairs in the hashmap.
+- `<hashmap>.replace(key, value)` - replaces the value of the specified key with the specified value.
+> Stack<Integer> stack = new Stack<>();  //Example stack of Integer datatype.
+> Queue<Character> queue = new LinkedListQueue<Character>(); //Example queue of Character datatype.
+- `<stack>.push(ele)` - adds an element to the stack.
+- `<stack>.pop()` - removes the top element from the stack.
+- `<stack>.peek()` - returns the top element from the stack.
+- `<stack>.empty()` - returns true if the stack is empty else returns false.
+- `<stack>.search(ele)` - returns the position of the specified element in the stack.
+- `<queue_name>.enqueue()` - adds an element to the queue.
+- `<queue_name>.dequeue()` - removes the front element from the queue.
+- `<queue_name>.peek()` - returns the front element from the queue.
+- `<queue_name>.isEmpty()` - returns true if the queue is empty else returns false.
+- `<queue_name>.isFull()` - returns true if the queue is full else returns false.
+- `<queue_name>.size()` - returns the number of elements in the queue.
+- `<queue_name>.first()` - returns the first element from the queue.
+- `<queue_name>.last()` - returns the last element from the queue.
+- `<queue_name>.contains(ele)` - returns true if the queue contains the specified element else returns false.
 - `Arrays.toString()` - prints the array in a readable format.
 - `Arrays.sort()` - sorts the array in ascending order.
 - `Arrays.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
@@ -28,6 +58,10 @@
 - `Scanner` class from `java.util` package
 - `Arrays` class from `java.util` package
 - `ArrayList` class from `java.util` package
+- `HashMap` class from `java.util` package
+- `Stack` class from `java.util` package
+- `Queue` class from `java.util` package 
+> Just import java.util.* to import all the classes from the package.
 - `Math` class from `java.lang` package (default)
 - `String` class from `java.lang` package (default)
 - `Integer` class from `java.lang` package (default)
