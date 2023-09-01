@@ -1,7 +1,5 @@
 package oops;
 
-import java.util.Arrays;
-
 public class InnerClass {
     static class Test{
         String name;

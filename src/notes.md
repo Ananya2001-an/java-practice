@@ -102,4 +102,17 @@
 - static variables are resolved during compile time since they are not dependent on objects.
 - If we want to create an instance of an inner class we have to declare it static or create an instance of the outer class first to access the inner class.
 - files in same package can access each other without importing.
+- call to super() must be the first statement in the constructor.
+- super keyword is used to access the parent class members.
+- `Multiple inheritance` is not supported in Java. But `Multilevel inheritance` is supported. Because let's say there are 2 classes A and B that are getting inherited by class C and both have a common prop like maybe name. So if we try to access name prop in class C then it will be ambiguous as to which name prop to access. So to avoid this, Java doesn't support multiple inheritance. 
+- Since `Hybrid inheritance` is a combination of multiple and multilevel inheritance, it is also not supported in Java.
+- **But using interfaces we can achieve multiple inheritance in Java.**
+- There are 2 types of polymorphism in Java: `compile-time polymorphism` and `run-time polymorphism`.
+  - Compile-time polymorphism is achieved using **method overloading**. It is also called `static polymorphism` or `early binding`. It is achieved by having multiple methods with the same name but different parameters. The compiler decides which method to call based on the parameters passed to the method. Example: multiple constructors.
+  - Runtime polymorphism is achieved using **method overriding**. It is also called `dynamic polymorphism` or `late binding`. It is achieved by having a method in the parent class and the child class with the same name and same parameters. The compiler decides which method to call based on the object used to call the method (since object gets created at runtime). Example: toString() method.
+- if a parent method is `final` then it can't be overridden in the child class.
+- if a class is final then one can't inherit it.
+- **you can inherit static methods, but you can't override them.** Because overriding depends on objects and static methods have no relation with objects, so they can't be overridden. Thus, the parent method would be called even if the child class has the same method.
+- `Encapsulation` is the process of wrapping code and data together into a single unit. It is achieved by making the variables private and providing public getter and setter methods to access and update the variables. It's also called `data hiding`. Encapsulation helps in achieving abstraction. It's more of an implementation detail.
+- `Abstraction` is the process of hiding the implementation details and showing only the functionality to the user. It is achieved by using abstract classes and interfaces. It's more of a design decision.
 - 
