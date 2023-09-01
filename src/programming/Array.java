@@ -6,6 +6,7 @@ public class Array {
     public static void main(String[] args) {
         int[] rnos = new int[5];
 //        int[] rnos = new int[10]{1, 2, 3, 4, 5}; // not allowed
+        int[] rnos1 = new int[]{1, 2, 3, 4, 5};
         int[] rnos2 = {1, 2, 3, 4, 5};
 
 //        System.out.println(Arrays.binarySearch(rnos2, 3));

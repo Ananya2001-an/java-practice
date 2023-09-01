@@ -1,11 +1,25 @@
 package oops;
 
-import java.lang.ref.Cleaner;
-
 public class Main {
     public static void main(String[] args) {
-        Student ananya = new Student("Ananya", 22, false);
-        ananya.sleep();
+//        Student ananya = new Student("Ananya", 22, false);
+//        Student aayan = new Student("Aayan", 16, false);
+//        System.out.println(ananya.noOfStudents);
+//        System.out.println(Student.noOfStudents);
+
+//        Main ob = new Main();
+//        ob.fun();
+
+        SingletonClass obj1 = SingletonClass.getInstance();
+
+        SingletonClass obj2 = SingletonClass.getInstance();
+
+//        both ref variables are pointing to the same object since the constructor is private
+        System.out.println(obj1 == obj2);
+    }
+
+    void fun() {
+        System.out.println("fun");
     }
 }
 
@@ -13,6 +27,13 @@ class Student {
     String name;
     int age;
     boolean isGraduated;
+    static int noOfStudents;
+
+//    runs only once when the class is loaded (first object is created). Is used to initialize static variables
+    static {
+        System.out.println("This is called a static block!!!");
+        noOfStudents = 0;
+    }
 
     void study() {
         System.out.println(name + " is studying");
@@ -29,9 +50,10 @@ class Student {
     }
 
     Student(String name, int age, boolean isGraduated){
-        this.name = "Ananya";
-        this.age = 20;
-        this.isGraduated = false;
+        this.name = name;
+        this.age = age;
+        this.isGraduated = isGraduated;
+        noOfStudents++; // or Student.noOfStudents++;
     }
 
 //    @Override

@@ -78,7 +78,7 @@
 - One can use wrapper classes like Integer instead of primitive datatypes like int to add more functionality to the variables.
 - Java supports unicode values meaning that it can support any language in the world.
 - "==" is used to compare the values of two variables. It is used to compare the reference of two objects. To compare the values of two objects, we use the `equals()` method. Like `str1.equals(str2)`.
-- Any function inside a static function also has to be static. Basically, a static function can only call other static functions. And even variables inside a static function have to be static.
+- Any function inside a static function also has to be static. Basically, a static function can only call other static functions. And even variables inside a static function have to be static. Else create an object of the class and call the function using that object.
 - Primitive datatypes are stored in the stack while objects are stored in the heap.
 - Primitive datatypes are passed by value while objects are passed by reference.
 - References in Java abstract memory management, providing safety and simplicity by preventing common memory-related issues.
@@ -96,4 +96,10 @@
 - final keyword is used to make a variable constant. It can't be changed once initialized.
 - if an object is declared final then it can't be changed once initialized. Meaning the values of its properties can be changed but the object itself can't be changed. Can't be reassigned.
 - if a method is declared final then it can't be overridden in the child class.
+- file with same name can be used in different packages.
+- static variables and methods in class are independent of objects. They can be accessed using class name.
+- static blocks are executed to initialize static variables. They are executed when the class is loaded for the first time.
+- static variables are resolved during compile time since they are not dependent on objects.
+- If we want to create an instance of an inner class we have to declare it static or create an instance of the outer class first to access the inner class.
+- files in same package can access each other without importing.
 - 
