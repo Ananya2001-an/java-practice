@@ -3,8 +3,8 @@ package oops.properties.inheritance;
 public class Box {
 //    since l is declared as private here, it can't be accessed directly in BoxWeight class
     private double l;
-    double b;
-    double h;
+    public double b;
+    public double h;
 
     double weight = 100;
 
@@ -17,7 +17,7 @@ public class Box {
         return l;
     }
 
-    Box(){
+    public Box(){
         this(1, 1, 1);
     }
 
@@ -25,7 +25,7 @@ public class Box {
         this(side, side, side);
     }
 
-    Box(double l, double b, double h){
+    public Box(double l, double b, double h){
         this.l = l;
         this.b = b;
         this.h = h;

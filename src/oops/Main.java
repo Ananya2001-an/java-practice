@@ -1,5 +1,7 @@
 package oops;
 
+import oops.properties.inheritance.Box;
+
 public class Main {
     public static void main(String[] args) {
 //        Student ananya = new Student("Ananya", 22, false);
@@ -16,6 +18,11 @@ public class Main {
 
 //        both ref variables are pointing to the same object since the constructor is private
         System.out.println(obj1 == obj2);
+
+//        can't access constructor outside package since not public, add public to access
+        Box box1 = new Box(1, 2, 3);
+//        instance variables can be accessed directly only if they are public
+        System.out.println(box1.b);
     }
 
     void fun() {

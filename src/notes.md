@@ -72,10 +72,10 @@
 ![Java Intro.png](..%2F..%2F..%2FDownloads%2FJava%20Intro.png)
 - Every file name ending with extension ".java" is a class itself.
 - Class names should start with capital letters. Though you can also start with small letters, it's not considered a good practice.
-- each line has to end with a semi-colon
+- each line has to end with a semicolon.
 - The public class name should be the same name as the file name.
 - java. lang packages are by default imported in the java class by the JVM
-- One can use wrapper classes like Integer instead of primitive datatypes like int to add more functionality to the variables.
+- One can use wrapper classes like Integer instead of primitive datatype like int to add more functionality to the variables.
 - Java supports unicode values meaning that it can support any language in the world.
 - "==" is used to compare the values of two variables. It is used to compare the reference of two objects. To compare the values of two objects, we use the `equals()` method. Like `str1.equals(str2)`.
 - Any function inside a static function also has to be static. Basically, a static function can only call other static functions. And even variables inside a static function have to be static. Else create an object of the class and call the function using that object.
@@ -115,4 +115,18 @@
 - **you can inherit static methods, but you can't override them.** Because overriding depends on objects and static methods have no relation with objects, so they can't be overridden. Thus, the parent method would be called even if the child class has the same method.
 - `Encapsulation` is the process of wrapping code and data together into a single unit. It is achieved by making the variables private and providing public getter and setter methods to access and update the variables. It's also called `data hiding`. Encapsulation helps in achieving abstraction. It's more of an implementation detail.
 - `Abstraction` is the process of hiding the implementation details and showing only the functionality to the user. It is achieved by using abstract classes and interfaces. It's more of a design decision.
-- 
+- classes, methods, variables, and constructors can't be accessed outside the package if they are not declared public.
+- ![Access modifiers](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202023-09-01%20205816.png)
+- `<object> instanceOf <Class>` - returns true if the object is an instance of the specified class else returns false.
+- Abstract classes can have both abstract and non-abstract methods but interfaces can only have abstract methods.
+- Abstract classes can have constructors but interfaces can't have constructors.
+- Abstract classes can have static methods but interfaces can't have static methods.
+- Abstract classes can have static variables but interfaces can't have static variables.
+- Abstract classes can have final methods but interfaces can't have final methods.
+- **We can't create an object of an abstract class since it's incomplete.** But we can create a reference variable of an abstract class.
+- Constructors of abstract classes are called when the child class object is created.
+- Multiple inheritance is not supported in abstract classes. Only with **interfaces**.
+- **static methods inside interfaces need to have a body.**
+- **Default methods are methods that can have a body.** The most important use of default methods in interfaces is to provide additional functionality to a given type without breaking down the implementing classes. Before Java 8, if a new method was introduced in an interface then all the implementing classes used to break.
+- Since interface doesn't have a direct object, the only way to access them is by using a class/interface and hence that is why if interface variable exists, it should be static otherwise it wont be accessible at all to outside world. Now since it is static, it can hold only one value and any classes that implements it can change it and hence it will be all mess. Hence if at all there is an interface variable, it will be implicitly static, final and obviously public!!!
+- **We can't create an object of an interface since it's incomplete.** But we can create a reference variable of an interface.
