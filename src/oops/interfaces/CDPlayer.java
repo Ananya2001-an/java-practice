@@ -1,4 +1,4 @@
-package oops.properties.interfaces;
+package oops.interfaces;
 
 public class CDPlayer implements Media{
     @Override

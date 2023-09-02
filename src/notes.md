@@ -61,10 +61,12 @@
 - `HashMap` class from `java.util` package
 - `Stack` class from `java.util` package
 - `Queue` class from `java.util` package 
+- `Comparator` interface from `java.util` package
 > Just import java.util.* to import all the classes from the package.
 - `Math` class from `java.lang` package (default)
 - `String` class from `java.lang` package (default)
 - `Integer` class from `java.lang` package (default)
+- `Comparable` interface from `java.lang` package (default)
 
 ### Notes on Java
 - Java is a procedural as well as an object-oriented language.
@@ -130,3 +132,5 @@
 - **Default methods are methods that can have a body.** The most important use of default methods in interfaces is to provide additional functionality to a given type without breaking down the implementing classes. Before Java 8, if a new method was introduced in an interface then all the implementing classes used to break.
 - Since interface doesn't have a direct object, the only way to access them is by using a class/interface and hence that is why if interface variable exists, it should be static otherwise it wont be accessible at all to outside world. Now since it is static, it can hold only one value and any classes that implements it can change it and hence it will be all mess. Hence if at all there is an interface variable, it will be implicitly static, final and obviously public!!!
 - **We can't create an object of an interface since it's incomplete.** But we can create a reference variable of an interface.
+- Comparable interface is used to sort the objects of the user-defined class. This interface is found in java.lang package and contains only one method named compareTo(Object). It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only. For example, it may be rollno, name, age or anything else. Can be used for defining custom comparison logic for 2 objects.
+- 

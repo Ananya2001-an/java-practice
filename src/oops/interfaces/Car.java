@@ -1,4 +1,4 @@
-package oops.properties.interfaces;
+package oops.interfaces;
 
 public class Car implements Engine, Brake, Media{
     @Override
