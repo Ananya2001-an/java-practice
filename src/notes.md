@@ -139,4 +139,4 @@
 - `throws` keyword is used to declare an exception.
 - `finally` block is used to execute important code such as closing connection, stream etc. It is executed whether an exception is handled or not.
 - `Shallow copy` means that if we do any changes to the clone, the same are reflected in the original object as well. It is done using `clone()` method. So it's not a true copy.
-- 
+-  
