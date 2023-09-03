@@ -75,6 +75,7 @@
 - Every file name ending with extension ".java" is a class itself.
 - Class names should start with capital letters. Though you can also start with small letters, it's not considered a good practice.
 - each line has to end with a semicolon.
+- **Character literals are enclosed in single quotes.** String literals are enclosed in double quotes.
 - The public class name should be the same name as the file name.
 - java. lang packages are by default imported in the java class by the JVM
 - One can use wrapper classes like Integer instead of primitive datatype like int to add more functionality to the variables.
@@ -133,4 +134,9 @@
 - Since interface doesn't have a direct object, the only way to access them is by using a class/interface and hence that is why if interface variable exists, it should be static otherwise it wont be accessible at all to outside world. Now since it is static, it can hold only one value and any classes that implements it can change it and hence it will be all mess. Hence if at all there is an interface variable, it will be implicitly static, final and obviously public!!!
 - **We can't create an object of an interface since it's incomplete.** But we can create a reference variable of an interface.
 - Comparable interface is used to sort the objects of the user-defined class. This interface is found in java.lang package and contains only one method named compareTo(Object). It provides a single sorting sequence only, i.e., you can sort the elements on the basis of single data member only. For example, it may be rollno, name, age or anything else. Can be used for defining custom comparison logic for 2 objects.
+- catch block for a particular exception should be written before the catch block for its parent exception. Else it will give an error.
+- `throw` keyword is used to throw an exception explicitly.
+- `throws` keyword is used to declare an exception.
+- `finally` block is used to execute important code such as closing connection, stream etc. It is executed whether an exception is handled or not.
+- `Shallow copy` means that if we do any changes to the clone, the same are reflected in the original object as well. It is done using `clone()` method. So it's not a true copy.
 - 
