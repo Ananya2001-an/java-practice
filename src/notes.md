@@ -71,7 +71,7 @@
 ### Notes on Java
 - Java is a procedural as well as an object-oriented language.
 - It's a statically typed language.
-![Java Intro.png](..%2F..%2F..%2FDownloads%2FJava%20Intro.png)
+![Java Intro](https://github.com/Ananya2001-an/java-practice/assets/55504616/59a0f088-b300-4a7c-b8be-d2608a6c6507)
 - Every file name ending with extension ".java" is a class itself.
 - Class names should start with capital letters. Though you can also start with small letters, it's not considered a good practice.
 - each line has to end with a semicolon.
@@ -119,7 +119,7 @@
 - `Encapsulation` is the process of wrapping code and data together into a single unit. It is achieved by making the variables private and providing public getter and setter methods to access and update the variables. It's also called `data hiding`. Encapsulation helps in achieving abstraction. It's more of an implementation detail.
 - `Abstraction` is the process of hiding the implementation details and showing only the functionality to the user. It is achieved by using abstract classes and interfaces. It's more of a design decision.
 - classes, methods, variables, and constructors can't be accessed outside the package if they are not declared public.
-- ![Access modifiers](..%2F..%2F..%2FPictures%2FScreenshots%2FScreenshot%202023-09-01%20205816.png)
+![Access modifiers](https://github.com/Ananya2001-an/java-practice/assets/55504616/fe0f0c26-aef8-42e3-80a9-f6225847bcd4)
 - `<object> instanceOf <Class>` - returns true if the object is an instance of the specified class else returns false.
 - Abstract classes can have both abstract and non-abstract methods but interfaces can only have abstract methods.
 - Abstract classes can have constructors but interfaces can't have constructors.
