@@ -64,6 +64,7 @@
 - `Stack` class from `java.util` package
 - `Queue` class from `java.util` package 
 - `Comparator` interface from `java.util` package
+- `TreeSet` class from `java.util` pkg
 > Just import java.util.* to import all the classes from the package.
 - `Math` class from `java.lang` package (default)
 - `String` class from `java.lang` package (default)
@@ -141,4 +142,8 @@
 - `throws` keyword is used to declare an exception.
 - `finally` block is used to execute important code such as closing connection, stream etc. It is executed whether an exception is handled or not.
 - `Shallow copy` means that if we do any changes to the clone, the same are reflected in the original object as well. It is done using `clone()` method. So it's not a true copy.
+
+### DSA points
+-  **`TreeSet` allows you to only add unique elements and all those elements are stored in ascending order.**
+-  You cant access elements directly from a TreeSet. Convert it to an arraylist to get element by index. Can also copy all elements to an array.
 -  
