@@ -3,6 +3,8 @@
 - `System.out.print()` - prints the output on the console and doesn't add a new line at the end.
 - `<array>.length` - returns the length of the array.
 - `<str>.length()` - returns the length of the string.
+- `<str>.toCharArray()` - returns a char array from a string.
+> new String(<char[] array>) will return a string from a char array.
 - `<array>.add(ele)` - adds an element to the array.
 - `<array>.remove(ele)` - removes an element from the array.
 - `<array>.get(index)` - returns the element at the specified index.
