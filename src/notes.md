@@ -20,7 +20,9 @@
 - `<array>.sort()` - sorts the array in ascending order.
 - `<array>.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
 > ArrayList also has all the above methods of array. So can say <arraylist>.add() and so on.
-- For printing arraylist to the screen no need to call toString() method. Just use `System.out.println(<arraylist>)`.
+- For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
+- `<arraylist>.size()` - returns the size of the arraylist.
+- `<arraylist1>.addAll(<arraylist2>)` - appends all elements of list2 to list1.
 - `<hashmap>.put(key, value)` - adds a key-value pair to the hashmap.
 - `<hashmap>.get(key)` - returns the value of the specified key.
 - `<hashmap>.remove(key)` - removes the key-value pair from the hashmap.
@@ -52,9 +54,11 @@
 - `<queue_name>.first()` - returns the first element from the queue.
 - `<queue_name>.last()` - returns the last element from the queue.
 - `<queue_name>.contains(ele)` - returns true if the queue contains the specified element else returns false.
+- `<priorityqueue>.poll()` - returns smallest element.
 - `Arrays.toString()` - prints the array in a readable format.
 - `Arrays.sort()` - sorts the array in ascending order.
 - `Arrays.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
+> `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set.
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
@@ -146,4 +150,6 @@
 ### DSA points
 -  **`TreeSet` allows you to only add unique elements and all those elements are stored in ascending order.**
 -  You cant access elements directly from a TreeSet. Convert it to an arraylist to get element by index. Can also copy all elements to an array.
--  
+-  A **HashSet** is an unordered collection of unique elements. It is one of the most commonly used implementations of the Set interface.
+- A **TreeSet** is an ordered collection of unique elements. It sorts the elements in natural order or according to a specified comparator.
+- A **LinkedHashSet** is an ordered collection of unique elements. It maintains the order in which elements were inserted.
