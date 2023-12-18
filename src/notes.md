@@ -153,3 +153,4 @@
 -  A **HashSet** is an unordered collection of unique elements. It is one of the most commonly used implementations of the Set interface.
 - A **TreeSet** is an ordered collection of unique elements. It sorts the elements in natural order or according to a specified comparator.
 - A **LinkedHashSet** is an ordered collection of unique elements. It maintains the order in which elements were inserted.
+- **inplace** means no extra space used. **Stable** sort means original placement of duplicate elements should not be changed.  
