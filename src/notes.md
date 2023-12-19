@@ -4,6 +4,9 @@
 - `<array>.length` - returns the length of the array.
 - `<str>.length()` - returns the length of the string.
 - `<str>.toCharArray()` - returns a char array from a string.
+- `<str>.indexOf(<str>)` - returns index of the second string in first string if it exists else -1 returned.
+- `<str>.contains(<str>)` - returns true if second string exists as a substring in the first one.
+- `String.valueOf(<char>/<int>)` - returns string from the other type.
 > new String(<char[] array>) will return a string from a char array.
 - `<array>.add(ele)` - adds an element to the array.
 - `<array>.remove(ele)` - removes an element from the array.
