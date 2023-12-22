@@ -7,7 +7,8 @@
 - `<str>.indexOf(<str>)` - returns index of the second string in first string if it exists else -1 returned.
 - `<str>.contains(<str>)` - returns true if second string exists as a substring in the first one.
 - `String.valueOf(<char>/<int>)` - returns string from the other type.
-> new String(<char[] array>) will return a string from a char array.
+  > new String(<char[] array>) will return a string from a char array.
+
 - `<array>.add(ele)` - adds an element to the array.
 - `<array>.remove(ele)` - removes an element from the array.
 - `<array>.get(index)` - returns the element at the specified index.
@@ -23,6 +24,7 @@
 - `<array>.sort()` - sorts the array in ascending order.
 - `<array>.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
 > ArrayList also has all the above methods of array. So can say <arraylist>.add() and so on.
+
 - For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
 - `<arraylist>.size()` - returns the size of the arraylist.
 - `<arraylist1>.addAll(<arraylist2>)` - appends all elements of list2 to list1.
@@ -41,6 +43,7 @@
 - `<hashmap>.isEmpty()` - returns true if the hashmap is empty else returns false.
 - `<hashmap>.size()` - returns the number of key-value pairs in the hashmap.
 - `<hashmap>.replace(key, value)` - replaces the value of the specified key with the specified value.
+
 > Stack<Integer> stack = new Stack<>();  //Example stack of Integer datatype.
 > Queue<Character> queue = new LinkedListQueue<Character>(); //Example queue of Character datatype.
 - `<stack>.push(ele)` - adds an element to the stack.
