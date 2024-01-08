@@ -9,28 +9,31 @@
 - `String.valueOf(<char>/<int>)` - returns string from the other type.
   > new String(<char[] array>) will return a string from a char array.
 
-- `<array>.add(ele)` - adds an element to the array.
-- `<array>.remove(ele)` - removes an element from the array.
-- `<array>.get(index)` - returns the element at the specified index.
-- `<array>.set(index, ele)` - sets the element at the specified index.
-- `<array>.clear()` - removes all the elements from the array.
-- `<array>.isEmpty()` - returns true if the array is empty else returns false.
-- `<array>.contains(ele)` - returns true if the array contains the specified element else returns false.
-- `<array>.indexOf(ele)` - returns the index of the specified element in the array.
-- `<array>.lastIndexOf(ele)` - returns the last index of the specified element in the array.
-- `<array>.toArray()` - converts the array to an array of objects.
-- `<array>.toString()` - converts the array to a string.
-- `<array>.clone()` - returns a copy of the array.
-- `<array>.sort()` - sorts the array in ascending order.
-- `<array>.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
-> ArrayList also has all the above methods of array. So can say <arraylist>.add() and so on.
+- `Arrays.sort(<array>)` - sorts the array in ascending order.
+- `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value.
+- `Arrays.asList(<array>)` - will treat array as list and can now use all available methods for arraylist on it as given below.
+- `Arrays.fill(<array>, value)` - fills array with given value.
 
 - For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
+- `<arraylist>.add(ele)` - adds an element to the arraylist.
+- `<arraylist>.remove(index)` - removes an element at index from the arraylist.
+- `<arraylist>.get(index)` - returns the element at the specified index.
+- `<arraylist>.set(index, ele)` - sets the element at the specified index.
+- `<arraylist>.clear()` - removes all the elements from the arraylist.
+- `<arraylist>.isEmpty()` - returns true if the arraylist is empty else returns false.
+- `<arraylist>.toString()` - converts the arraylist to a string.
+- `<arraylist>.clone()` - returns a copy of the arraylist.
 - `<arraylist>.size()` - returns the size of the arraylist.
 - `<arraylist1>.addAll(<arraylist2>)` - appends all elements of list2 to list1.
+- `<arraylist>.contains(ele)` - returns true if the arraylist contains the specified element else returns false.
+- `<arraylist>.indexOf(ele)` - returns the index of the specified element in the arraylist.
+- `<arraylist>.lastIndexOf(ele)` - returns the last index of the specified element in the arraylist.
+- `<arraylist>.toArray()` - converts the arraylist to an array of objects.
+- `<arraylist>.iterator()` - returns an iterator object. Can use methods like hasNext() and next() on the object.
+
 - `<hashmap>.put(key, value)` - adds a key-value pair to the hashmap.
 - `<hashmap>.get(key)` - returns the value of the specified key.
-- `<hashmap>.remove(key)` - removes the key-value pair from the hashmap.
+- `<hashmap>.remove(key)` - removes the key-value pair from the hashmap. Returns that pair.
 - `<hashmap>.containsKey(key)` - returns true if the hashmap contains the specified key else returns false.
 - `<hashmap>.containsValue(value)` - returns true if the hashmap contains the specified value else returns false.
 - `<hashmap>.keySet()` - returns a set of all the keys in the hashmap.
@@ -43,6 +46,7 @@
 - `<hashmap>.isEmpty()` - returns true if the hashmap is empty else returns false.
 - `<hashmap>.size()` - returns the number of key-value pairs in the hashmap.
 - `<hashmap>.replace(key, value)` - replaces the value of the specified key with the specified value.
+- `<hashmap>.putIfAbsent(key, value)` - creates key value pair in map if not already present. Returns "null" if successful. 
 
 > Stack<Integer> stack = new Stack<>();  //Example stack of Integer datatype.
 > Queue<Character> queue = new LinkedListQueue<Character>(); //Example queue of Character datatype.
@@ -64,7 +68,15 @@
 - `Arrays.toString()` - prints the array in a readable format.
 - `Arrays.sort()` - sorts the array in ascending order.
 - `Arrays.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
-> `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set.
+- `Arrays.copyOf(original array, new length)` - returns a copy of the array with new size; bigger. 
+
+> `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set. 
+- 
+
+- Random rand = new Random(). Array[rand.nextInt(Array.length)] will return a random element from the array.
+- Another way is:
+  -  (int)(Math.random()*Array.length) gives random index.
+  -  Array[Math.floor(Math.random()*Array.length)]
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
