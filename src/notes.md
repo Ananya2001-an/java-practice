@@ -1,12 +1,12 @@
 ### Most used Java methods
-- `System.out.println()` - prints the output on the console and adds a new line at the end.
-- `System.out.print()` - prints the output on the console and doesn't add a new line at the end.
 - `<array>.length` - returns the length of the array.
 - `<str>.length()` - returns the length of the string.
 - `<str>.toCharArray()` - returns a char array from a string.
 - `<str>.indexOf(<str>)` - returns index of the second string in first string if it exists else -1 returned.
 - `<str>.contains(<str>)` - returns true if second string exists as a substring in the first one.
 - `String.valueOf(<char>/<int>)` - returns string from the other type.
+- `<str>.trim()` - trim leading and trailing whitespaces.
+- `<str>.split(<regex>)` - if spilt by whitespace then pass "\\s+". This will consider more than one space for split. So even for "hello  world" we will get ["hello", "world"] instead of ["hello", " world"]. LEARN REGEX!
   > new String(<char[] array>) will return a string from a char array.
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
