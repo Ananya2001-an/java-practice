@@ -4,9 +4,23 @@
 - `<str>.toCharArray()` - returns a char array from a string.
 - `<str>.indexOf(<str>)` - returns index of the second string in first string if it exists else -1 returned.
 - `<str>.contains(<str>)` - returns true if second string exists as a substring in the first one.
+- `<str>.replace(old char, new char)` - replaces old char in string with new one. Need to reassign to see changes. Doesn't do inplace mutation.
+- `<str1>.concat(<str2>)` - appends str2 to str1.
+- `<str>.endsWith(suffix)`
+- `<str>.startsWith(prefix)`
+- `<str1>.equals(<str2>)`
+- `<str>.isEmpty()`
 - `String.valueOf(<char>/<int>)` - returns string from the other type.
 - `<str>.trim()` - trim leading and trailing whitespaces.
+> trim() removes a single leading white space and a single trailing white space, but does not remove multiple leading or trailing white spaces. strip() removes both leading and trailing white spaces from a string. stripLeading() removes leading white spaces but leaves trailing white spaces.
 - `<str>.split(<regex>)` - if spilt by whitespace then pass "\\s+". This will consider more than one space for split. So even for "hello  world" we will get ["hello", "world"] instead of ["hello", " world"]. LEARN REGEX!
+- `new StringBuffer()` creates a mutable string object.
+- `<strbuff>.append(<str>)`
+- `<strbuff>.insert(index, string)`
+- `<strbuff>.delete(start index, end index)`
+- `<strbuff>.deleteCharAt(index)`
+- `<strbuff>.isEmpty()`
+- `<strbuff>.lastIndexOf(string)` and `<strbuff>.indexOf(string)`
   > new String(<char[] array>) will return a string from a char array.
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
