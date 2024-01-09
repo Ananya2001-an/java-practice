@@ -10,6 +10,8 @@
 - `<str>.startsWith(prefix)`
 - `<str1>.equals(<str2>)`
 - `<str>.isEmpty()`
+- `<str>.toLowerCase()`
+- `<str>.replaceAll(regex/char, new char)` - for removing all non-alphanumeric chars regex is [^a-zA-Z0-9].
 - `String.valueOf(<char>/<int>)` - returns string from the other type.
 - `<str>.trim()` - trim leading and trailing whitespaces.
 > trim() removes a single leading white space and a single trailing white space, but does not remove multiple leading or trailing white spaces. strip() removes both leading and trailing white spaces from a string. stripLeading() removes leading white spaces but leaves trailing white spaces.
