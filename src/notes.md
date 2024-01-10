@@ -94,6 +94,8 @@
   -  (int)(Math.random()*Array.length) gives random index.
   -  Array[Math.floor(Math.random()*Array.length)]
 
+- Integer.MAX_VALUE gives max int value.
+
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
 - `Arrays` class from `java.util` package
