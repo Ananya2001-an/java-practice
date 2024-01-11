@@ -96,6 +96,7 @@
   -  Array[Math.floor(Math.random()*Array.length)]
 
 - Integer.MAX_VALUE gives max int value.
+- Scanner s = new Scanner(System.in); s.nextLine() will read whole line with spaces as well. But s.next() will terminate if any space is given.   
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
