@@ -8,9 +8,10 @@
 - `<str1>.concat(<str2>)` - appends str2 to str1.
 - `<str>.endsWith(suffix)`
 - `<str>.startsWith(prefix)`
-- `<str1>.equals(<str2>)`
+- `<str1>.equals(<str2>)` - use it to compare strings rather than == 
 - `<str>.isEmpty()`
 - `<str>.toLowerCase()`
+- `<str>.substring(start index, end index)` - returns substring from string from index start to end-1.
 - `<str>.replaceAll(regex/char, new char)` - for removing all non-alphanumeric chars regex is [^a-zA-Z0-9].
 - `String.valueOf(<char>/<int>)` - returns string from the other type.
 - `<str>.trim()` - trim leading and trailing whitespaces.
