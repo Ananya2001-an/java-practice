@@ -13,7 +13,7 @@
 - `<str>.toLowerCase()`
 - `<str>.substring(start index, end index)` - returns substring from string from index start to end-1.
 - `<str>.replaceAll(regex/char, new char)` - for removing all non-alphanumeric chars regex is [^a-zA-Z0-9].
-- `String.valueOf(<char>/<int>)` - returns string from the other type.
+- `String.valueOf(<char>/<int>)` - returns string from the other type. Can't directly typecast like (String).
 - `<str>.trim()` - trim leading and trailing whitespaces.
 > trim() removes a single leading white space and a single trailing white space, but does not remove multiple leading or trailing white spaces. strip() removes both leading and trailing white spaces from a string. stripLeading() removes leading white spaces but leaves trailing white spaces.
 - `<str>.split(<regex>)` - if spilt by whitespace then pass "\\s+". This will consider more than one space for split. So even for "hello  world" we will get ["hello", "world"] instead of ["hello", " world"]. LEARN REGEX!
