@@ -17,6 +17,8 @@
 - `<str>.trim()` - trim leading and trailing whitespaces.
 > trim() removes a single leading white space and a single trailing white space, but does not remove multiple leading or trailing white spaces. strip() removes both leading and trailing white spaces from a string. stripLeading() removes leading white spaces but leaves trailing white spaces.
 - `<str>.split(<regex>)` - if spilt by whitespace then pass "\\s+". This will consider more than one space for split. So even for "hello  world" we will get ["hello", "world"] instead of ["hello", " world"]. LEARN REGEX!
+- `<str>.split("")` - to get each char as separate string in array.
+- `String.join("," <array>)` - join array elements by ',' to get string.
 - `new StringBuffer()` creates a mutable string object.
 - `<strbuff>.append(<str>)`
 - `<strbuff>.insert(index, string)`
@@ -25,11 +27,13 @@
 - `<strbuff>.isEmpty()`
 - `<strbuff>.lastIndexOf(string)` and `<strbuff>.indexOf(string)`
   > new String(<char[] array>) will return a string from a char array.
+- `StringBuilder` 
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
 - `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value.
-- `Arrays.asList(<array>)` - will treat array as list and can now use all available methods for arraylist on it as given below.
+- `Arrays.asList(<array>)` - will treat array as list and can now use all available methods for arraylist on it as given below. eg; Arrays.asList(1,2,3);
 - `Arrays.fill(<array>, value)` - fills array with given value.
+- `Arrays.toString(<array>)` - to print array to screen
 
 - For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
 - `<arraylist>.add(ele)` - adds an element to the arraylist.
