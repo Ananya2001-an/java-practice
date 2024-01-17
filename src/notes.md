@@ -115,6 +115,16 @@
       ...
   }
 
+- in LinkedList if you have a pointer pointing to null and another pointer pointing to this one then essentially the second pointer is also pointing to null.
+```java
+  head = null;
+  current = head;
+```
+so current is also null. now if head = new node() then make sure to do current = head so as to keep track of the current list.
+
+- 
+
+
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
 - `Arrays` class from `java.util` package
