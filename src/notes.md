@@ -67,14 +67,16 @@
 - `<hashmap>.isEmpty()` - returns true if the hashmap is empty else returns false.
 - `<hashmap>.size()` - returns the number of key-value pairs in the hashmap.
 - `<hashmap>.replace(key, value)` - replaces the value of the specified key with the specified value.
-- `<hashmap>.putIfAbsent(key, value)` - creates key value pair in map if not already present. Returns "null" if successful. 
+- `<hashmap>.putIfAbsent(key, value)` - creates key value pair in map if not already present. Returns "null" if successful.
+- `<hashmap>.getOrDefault(key, 0)` - gets value of key or set default as 0.
+-  `<hashmap>.toString()` - to print hashmap to console.
 
 > Stack<Integer> stack = new Stack<>();  //Example stack of Integer datatype.
 > Queue<Character> queue = new LinkedListQueue<Character>(); //Example queue of Character datatype.
 - `<stack>.push(ele)` - adds an element to the stack.
 - `<stack>.pop()` - removes the top element from the stack.
-- `<stack>.peek()` - returns the top element from the stack.
-- `<stack>.empty()` - returns true if the stack is empty else returns false.
+- `<stack>.peek()` - returns the top element from the stack. Can perform only if stack not empty.
+- `<stack>.isEmpty()` - returns true if the stack is empty else returns false.
 - `<stack>.search(ele)` - returns the position of the specified element in the stack.
 - `<queue_name>.enqueue()` - adds an element to the queue.
 - `<queue_name>.dequeue()` - removes the front element from the queue.
