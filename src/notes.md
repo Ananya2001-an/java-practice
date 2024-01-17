@@ -122,8 +122,15 @@
 ```
 so current is also null. now if head = new node() then make sure to do current = head so as to keep track of the current list.
 
+- **Reverse a LL**
+  Follow the steps below to solve the problem:
+  1. Initialize three pointers prev as NULL, curr as head, and next as NULL.
+  2. Iterate through the linked list. In a loop, do the following:
+      next = curr -> next
+      curr -> next = prev
+      prev = curr 
+      curr = next
 - 
-
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
