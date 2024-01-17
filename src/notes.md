@@ -8,7 +8,7 @@
 - `<str1>.concat(<str2>)` - appends str2 to str1.
 - `<str>.endsWith(suffix)`
 - `<str>.startsWith(prefix)`
-- `<str1>.equals(<str2>)` - use it to compare strings rather than == 
+- `<str1>.equals(<str2>)` - use it to compare strings rather than ==; "==" for chars
 - `<str>.isEmpty()`
 - `<str>.toLowerCase()`
 - `<str>.substring(start index, end index)` - returns substring from string from index start to end-1.
@@ -27,7 +27,8 @@
 - `<strbuff>.isEmpty()`
 - `<strbuff>.lastIndexOf(string)` and `<strbuff>.indexOf(string)`
   > new String(<char[] array>) will return a string from a char array.
-- `StringBuilder` 
+- `StringBuilder` class
+- `<strbuild>.append(<str>)`
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
 - `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value.
@@ -102,7 +103,17 @@
   -  Array[Math.floor(Math.random()*Array.length)]
 
 - Integer.MAX_VALUE gives max int value.
-- Scanner s = new Scanner(System.in); s.nextLine() will read whole line with spaces as well. But s.next() will terminate if any space is given.   
+- Scanner s = new Scanner(System.in); s.nextLine() will read whole line with spaces as well. But s.next() will terminate if any space is given.
+- switch(c){
+    case 1:
+      ...
+      break
+    case 2:
+      ...
+      break
+    default:
+      ...
+  }
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
