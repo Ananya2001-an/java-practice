@@ -72,27 +72,32 @@
 - `<hashmap>.getOrDefault(key, 0)` - gets value of key or set default as 0.
 -  `<hashmap>.toString()` - to print hashmap to console.
 
-> Stack<Integer> stack = new Stack<>();  //Example stack of Integer datatype.
-> Queue<Character> queue = new LinkedListQueue<Character>(); //Example queue of Character datatype.
+> Stack<> stack = new Stack<>();
+> Queue<> queue = new LinkedList();
+
 - `<stack>.push(ele)` - adds an element to the stack.
 - `<stack>.pop()` - removes the top element from the stack.
 - `<stack>.peek()` - returns the top element from the stack. Can perform only if stack not empty.
 - `<stack>.isEmpty()` - returns true if the stack is empty else returns false.
 - `<stack>.search(ele)` - returns the position of the specified element in the stack.
-- `<queue_name>.enqueue()` - adds an element to the queue.
-- `<queue_name>.dequeue()` - removes the front element from the queue.
-- `<queue_name>.peek()` - returns the front element from the queue.
-- `<queue_name>.isEmpty()` - returns true if the queue is empty else returns false.
-- `<queue_name>.isFull()` - returns true if the queue is full else returns false.
-- `<queue_name>.size()` - returns the number of elements in the queue.
-- `<queue_name>.first()` - returns the first element from the queue.
-- `<queue_name>.last()` - returns the last element from the queue.
-- `<queue_name>.contains(ele)` - returns true if the queue contains the specified element else returns false.
+  
+- `<queue>.add()` - adds an element to the queue.
+- `<queue>.remove()` - removes the front element from the queue.
+- `<queue>.peek()` - Retrieves, but does not remove, the head of this queue, or returns null if this queue is empty.
+- `<queue>.poll()` - Retrieves and removes the head of this queue, or returns null if this queue is empty.
+- `<queue>.isEmpty()` - returns true if the queue is empty else returns false.
+- `<queue>.isFull()` - returns true if the queue is full else returns false.
+- `<queue>.size()` - returns the number of elements in the queue.
+- `<queue>.clear()` - Removes all the elements from the set.
+- `<queue>.contains(ele)` - returns true if the queue contains the specified element else returns false.
+- `<queue>.toArray(new <type>[<queue>.size()])` - converts queue to array.
 - `<priorityqueue>.poll()` - returns smallest element.
+  
 - `Arrays.toString()` - prints the array in a readable format.
 - `Arrays.sort()` - sorts the array in ascending order.
 - `Arrays.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
-- `Arrays.copyOf(original array, new length)` - returns a copy of the array with new size; bigger. 
+- `Arrays.copyOf(original array, new length)` - returns a copy of the array with new size; bigger.
+- `Collections.addAll(queue, array)` - creates queue from array elements. 
 
 > `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set. 
 - 
@@ -104,7 +109,8 @@
 
 - Integer.MAX_VALUE gives max int value.
 - Scanner s = new Scanner(System.in); s.nextLine() will read whole line with spaces as well. But s.next() will terminate if any space is given.
-- switch(c){
+- ```java
+  switch(c){
     case 1:
       ...
       break
@@ -114,7 +120,7 @@
     default:
       ...
   }
-
+```
 - in LinkedList if you have a pointer pointing to null and another pointer pointing to this one then essentially the second pointer is also pointing to null.
 ```java
   head = null;
@@ -126,10 +132,12 @@ so current is also null. now if head = new node() then make sure to do current =
   Follow the steps below to solve the problem:
   1. Initialize three pointers prev as NULL, curr as head, and next as NULL.
   2. Iterate through the linked list. In a loop, do the following:
+      ```java
       next = curr -> next
       curr -> next = prev
       prev = curr 
       curr = next
+      ```
 - 
 
 ### Most used Java Packages/Classes
