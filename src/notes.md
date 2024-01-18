@@ -109,6 +109,7 @@
 
 - Integer.MAX_VALUE gives max int value.
 - Scanner s = new Scanner(System.in); s.nextLine() will read whole line with spaces as well. But s.next() will terminate if any space is given.
+
 - ```java
   switch(c){
     case 1:
@@ -121,11 +122,13 @@
       ...
   }
 ```
+
 - in LinkedList if you have a pointer pointing to null and another pointer pointing to this one then essentially the second pointer is also pointing to null.
 ```java
   head = null;
   current = head;
 ```
+
 so current is also null. now if head = new node() then make sure to do current = head so as to keep track of the current list.
 
 - **Reverse a LL**
