@@ -32,9 +32,11 @@
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
 - `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value.
-- `Arrays.asList(<array>)` - will treat array as list and can now use all available methods for arraylist on it as given below. eg; Arrays.asList(1,2,3);
+- `Arrays.asList(<array>)` - will treat array as list. eg; Arrays.asList(1,2,3); Just a List not arraylist. whatever changes made to this list will reflect on original array. Can create a new ArrayList from this array saying new ArrayList<>(Arrays.asList(arr));
 - `Arrays.fill(<array>, value)` - fills array with given value.
-- `Arrays.toString(<array>)` - to print array to screen
+- `Arrays.toString(<array>)` - to print array to screen.
+- `Arrays.copyOf(original array, new length)` - returns a copy of the array with new size; bigger.
+- `Arrays.copyOfRange(array, start index, end index)` - creates subarray from start to end- 1 index.
 
 - For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
 - `<arraylist>.add(ele)` - adds an element to the arraylist.
@@ -70,7 +72,7 @@
 - `<hashmap>.replace(key, value)` - replaces the value of the specified key with the specified value.
 - `<hashmap>.putIfAbsent(key, value)` - creates key value pair in map if not already present. Returns "null" if successful.
 - `<hashmap>.getOrDefault(key, 0)` - gets value of key or set default as 0.
--  `<hashmap>.toString()` - to print hashmap to console.
+- `<hashmap>.toString()` - to print hashmap to console.
 
 > Stack<> stack = new Stack<>();
 > Queue<> queue = new LinkedList();
@@ -92,11 +94,6 @@
 - `<queue>.contains(ele)` - returns true if the queue contains the specified element else returns false.
 - `<queue>.toArray(new <type>[<queue>.size()])` - converts queue to array.
 - `<priorityqueue>.poll()` - returns smallest element.
-  
-- `Arrays.toString()` - prints the array in a readable format.
-- `Arrays.sort()` - sorts the array in ascending order.
-- `Arrays.binarySearch()` - searches for an element in the array and returns the index of the element if found else returns a negative value.
-- `Arrays.copyOf(original array, new length)` - returns a copy of the array with new size; bigger.
 - `Collections.addAll(queue, array)` - creates queue from array elements. 
 
 > `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set. 
@@ -121,7 +118,7 @@
     default:
       ...
   }
-```
+  ```
 
 - in LinkedList if you have a pointer pointing to null and another pointer pointing to this one then essentially the second pointer is also pointing to null.
 ```java
