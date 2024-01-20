@@ -54,6 +54,7 @@
 - `<arraylist>.lastIndexOf(ele)` - returns the last index of the specified element in the arraylist.
 - `<arraylist>.toArray()` - converts the arraylist to an array of objects.
 - `<arraylist>.iterator()` - returns an iterator object. Can use methods like hasNext() and next() on the object.
+- `<arraylist>.replaceAll(e -> e.toLowerCase())` - pass operator to replaceAll func to replace all values with new value.
 
 - `<hashmap>.put(key, value)` - adds a key-value pair to the hashmap.
 - `<hashmap>.get(key)` - returns the value of the specified key.
