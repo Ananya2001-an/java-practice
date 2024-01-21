@@ -96,7 +96,8 @@
 - `<queue>.toArray(new <type>[<queue>.size()])` - converts queue to array.
 - `<priorityqueue>.poll()` - returns smallest element.
 - `<arraydeque>.removeFirst()`, `<arraydeque>.removeLast()`, `<arraydeque>.getFirst()`, `<arraydeque>.getLast()`, `<arraydeque>.addFirst()`, `<arraydeque>.addLast()` are some extra methods provided by `ArrayDeque` class. All above methods also present. Just make sure that the instance type is Deque not Queue or else you will get compiler error.
-- `Collections.addAll(queue, array)` - creates queue from array elements. 
+- `Collections.addAll(queue, array)` - creates queue from array elements.
+- `Collections.sort(<arraylist>)`
 
 > `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set. 
 - 
@@ -172,7 +173,7 @@ so current is also null. now if head = new node() then make sure to do current =
 - "==" is used to compare the values of two variables. It is used to compare the reference of two objects. To compare the values of two objects, we use the `equals()` method. Like `str1.equals(str2)`.
 - Any function inside a static function also has to be static. Basically, a static function can only call other static functions. And even variables inside a static function have to be static. Else create an object of the class and call the function using that object.
 - Primitive datatypes are stored in the stack while objects are stored in the heap.
-- Primitive datatypes are passed by value while objects are passed by reference.
+- **Primitive datatypes are passed by value while objects are passed by reference.**
 - References in Java abstract memory management, providing safety and simplicity by preventing common memory-related issues.
 - Java abstracts away memory management. You create objects using the new keyword, and Java's garbage collector automatically reclaims memory when objects are no longer reachable.
 - A reference points to an object in memory, but you don't directly manipulate memory addresses like in C.
