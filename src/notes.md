@@ -95,7 +95,7 @@
 - `<queue>.contains(ele)` - returns true if the queue contains the specified element else returns false.
 - `<queue>.toArray(new <type>[<queue>.size()])` - converts queue to array.
 - `<priorityqueue>.poll()` - returns smallest element.
-- `<arraydeque>.removeFirst()`, `<arraydeque>.removeLast()`, `<arraydeque>.getFirst()`, `<arraydeque>.getLast()`, `<arraydeque>.addFirst()`, `<arraydeque>.addLast()` are some extra methods provided by `ArrayDeque` class. All above methods also present.
+- `<arraydeque>.removeFirst()`, `<arraydeque>.removeLast()`, `<arraydeque>.getFirst()`, `<arraydeque>.getLast()`, `<arraydeque>.addFirst()`, `<arraydeque>.addLast()` are some extra methods provided by `ArrayDeque` class. All above methods also present. Just make sure that the instance type is Deque not Queue or else you will get compiler error.
 - `Collections.addAll(queue, array)` - creates queue from array elements. 
 
 > `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set. 
