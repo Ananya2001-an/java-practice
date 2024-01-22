@@ -141,7 +141,7 @@ so current is also null. now if head = new node() then make sure to do current =
       prev = curr 
       curr = next
       ```
-- 
+- `Pair<String, Integer> pair = new Pair<>(1, "apple");` creates a key-value pair. Can use `pair.getKey()` and `pair.getValue()`
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
