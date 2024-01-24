@@ -142,6 +142,8 @@ so current is also null. now if head = new node() then make sure to do current =
       curr = next
       ```
 - `Pair<String, Integer> pair = new Pair<>(1, "apple");` creates a key-value pair. Can use `pair.getKey()` and `pair.getValue()`
+- https://leetcode.com/problems/combination-sum/solutions/16502/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
+- 
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
