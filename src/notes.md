@@ -29,6 +29,8 @@
   > new String(<char[] array>) will return a string from a char array.
 - `StringBuilder` class
 - `<strbuild>.append(<str>)`
+- `<strbuild>.reverse()`
+- `<strbuild>.toString()`
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
 - `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value.
@@ -143,8 +145,10 @@ so current is also null. now if head = new node() then make sure to do current =
       ```
 - `Pair<String, Integer> pair = new Pair<>(1, "apple");` creates a key-value pair. Can use `pair.getKey()` and `pair.getValue()`
 - https://leetcode.com/problems/combination-sum/solutions/16502/a-general-approach-to-backtracking-questions-in-java-subsets-permutations-combination-sum-palindrome-partitioning
-- 
-
+- `(Object(<int>/<char>)).getClass().getSimpleName()` - get type of int or char; for string just do `<str>.getClass().getSimpleName()`
+- **The result of adding Java chars, shorts, or bytes is an int**
+- **difference between consecutive chars will be 1; sum might be some huge integer value but for working on any binary kind of problems we can take advantage of this info like in Bit Manipulation**
+  
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
 - `Arrays` class from `java.util` package
