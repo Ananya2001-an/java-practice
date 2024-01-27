@@ -158,7 +158,7 @@ so current is also null. now if head = new node() then make sure to do current =
   boolean: boolean data type represents one bit of information.
   char: char data type is a single 16-bit Unicode character.
 
-- 
+- **Bitwise AND of any 2 numbers always results in a value that is less than or equal to the smaller of the 2 numbers.** 
 
 
 ### Most used Java Packages/Classes
