@@ -109,7 +109,8 @@
   -  (int)(Math.random()*Array.length) gives random index.
   -  Array[Math.floor(Math.random()*Array.length)]
 
-- Integer.MAX_VALUE gives max int value.
+- `Integer.MAX_VALUE` gives max int value.
+- `Integer.toBinaryString(<int>)` - to get binary representation for an int value.
 - Scanner s = new Scanner(System.in); s.nextLine() will read whole line with spaces as well. But s.next() will terminate if any space is given.
 
 - ```java
@@ -148,7 +149,18 @@ so current is also null. now if head = new node() then make sure to do current =
 - `(Object(<int>/<char>)).getClass().getSimpleName()` - get type of int or char; for string just do `<str>.getClass().getSimpleName()`
 - **The result of adding Java chars, shorts, or bytes is an int**
 - **difference between consecutive chars will be 1; sum might be some huge integer value but for working on any binary kind of problems we can take advantage of this info like in Bit Manipulation**
-  
+- byte: Byte data type is an 8-bit signed two's complement integer.
+  Short: Short data type is a 16-bit signed two's complement integer.
+  int: Int data type is a 32-bit signed two's complement integer.
+  long: Long data type is a 64-bit signed two's complement integer.
+  float: Float data type is a single-precision 32-bit IEEE 754 floating point.
+  double: double data type is a double-precision 64-bit IEEE 754 floating point.
+  boolean: boolean data type represents one bit of information.
+  char: char data type is a single 16-bit Unicode character.
+
+- 
+
+
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
 - `Arrays` class from `java.util` package
