@@ -39,6 +39,7 @@
 - `Arrays.toString(<array>)` - to print array to screen.
 - `Arrays.copyOf(original array, new length)` - returns a copy of the array with new size; bigger.
 - `Arrays.copyOfRange(array, start index, end index)` - creates subarray from start to end- 1 index.
+- `Arrays.sort(<array>, Collections.reverseOrder())` - reverse sort an array.
 
 - For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
 - `<arraylist>.add(ele)` - adds an element to the arraylist.
@@ -76,6 +77,8 @@
 - `<hashmap>.putIfAbsent(key, value)` - creates key value pair in map if not already present. Returns "null" if successful.
 - `<hashmap>.getOrDefault(key, 0)` - gets value of key or set default as 0.
 - `<hashmap>.toString()` - to print hashmap to console.
+- `Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey()` - gets key for max value.
+- `Collection.max(map.values())` - get max value.
 
 > Stack<> stack = new Stack<>();
 > Queue<> queue = new LinkedList();
