@@ -50,6 +50,7 @@
 - `<arraylist>.isEmpty()` - returns true if the arraylist is empty else returns false.
 - `<arraylist>.toString()` - converts the arraylist to a string.
 - `<arraylist>.clone()` - returns a copy of the arraylist.
+- `<arraylist1>.equals(<arraylist2>)` - to compare 2 arraylists.
 - `<arraylist>.size()` - returns the size of the arraylist.
 - `<arraylist1>.addAll(<arraylist2>)` - appends all elements of list2 to list1.
 - `<arraylist>.contains(ele)` - returns true if the arraylist contains the specified element else returns false.
