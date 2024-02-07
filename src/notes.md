@@ -106,7 +106,7 @@
 - `Collections.sort(<arraylist>)`
 
 > `Set<> set = new HashSet/TreeSet/LinkedHashSet<>();` to create a set. 
-- 
+- set.add(<value>) will return false if that value already exists.
 
 - Random rand = new Random(). Array[rand.nextInt(Array.length)] will return a random element from the array.
 - Another way is:
