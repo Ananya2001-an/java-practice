@@ -82,11 +82,12 @@
 - `Collection.max(map.values())` - get max value.
 
 > Stack<> stack = new Stack<>();
+
 > Queue<> queue = new LinkedList();
+
 > PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder()); creates max heap. Use poll() method to get largest element each time.
 
-**PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator()); pass a custom comparator object to define the condition in which the ordering should take place inside a minheap.** 
--
+>PriorityQueue<int[]> pq = new PriorityQueue<>(new Comparator()); pass a custom comparator object to define the condition in which the ordering should take place inside a minheap.
 
 - `<stack>.push(ele)` - adds an element to the stack.
 - `<stack>.pop()` - removes the top element from the stack.
