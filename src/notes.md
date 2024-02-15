@@ -57,8 +57,10 @@
 - `<arraylist>.indexOf(ele)` - returns the index of the specified element in the arraylist.
 - `<arraylist>.lastIndexOf(ele)` - returns the last index of the specified element in the arraylist.
 - `<arraylist>.toArray()` - converts the arraylist to an array of objects.
+- `list.stream().mapToInt(i -> i).toArray()` - convert arraylist to int array.
 - `<arraylist>.iterator()` - returns an iterator object. Can use methods like hasNext() and next() on the object.
 - `<arraylist>.replaceAll(e -> e.toLowerCase())` - pass operator to replaceAll func to replace all values with new value.
+- we can create a new arraylist with a predefined size but it will still be empty. **It just defines capacity not size.** so if u do get u will get index out of bounds exception. 
 
 - `<hashmap>.put(key, value)` - adds a key-value pair to the hashmap.
 - `<hashmap>.get(key)` - returns the value of the specified key.
