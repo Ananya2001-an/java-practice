@@ -96,6 +96,8 @@
 - `<stack>.peek()` - returns the top element from the stack. Can perform only if stack not empty.
 - `<stack>.isEmpty()` - returns true if the stack is empty else returns false.
 - `<stack>.search(ele)` - returns the position of the specified element in the stack.
+- `<stack>.size()`
+- `<stack>.elementAt(index)` - get element at index
   
 - `<queue>.add()` - adds an element to the queue.
 - `<queue>.remove()` - removes the front element from the queue.
