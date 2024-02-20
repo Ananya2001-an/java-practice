@@ -3,6 +3,7 @@
 - `<str>.length()` - returns the length of the string.
 - `<str>.toCharArray()` - returns a char array from a string.
 - `<str>.indexOf(<str>)` - returns index of the second string in first string if it exists else -1 returned.
+- `<str>.indexOf(<str>, start index)` - returns index of the second string in first string from given start index.
 - `<str>.contains(<str>)` - returns true if second string exists as a substring in the first one.
 - `<str>.replace(old char, new char)` - replaces old char in string with new one. Need to reassign to see changes. Doesn't do inplace mutation.
 - `<str1>.concat(<str2>)` - appends str2 to str1.
@@ -33,7 +34,7 @@
 - `<strbuild>.toString()`
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
-- `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value.
+- `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value. Can also pass start and end index like this: **Arrays.binarySearch(<array>, low, high+1, target)**. If value not present in that part of the array it may give negative value but not -1.
 - `Arrays.asList(<array>)` - will treat array as list. eg; Arrays.asList(1,2,3); Just a List not arraylist. whatever changes made to this list will reflect on original array. Can create a new ArrayList from this array saying new ArrayList<>(Arrays.asList(arr));
 - `Arrays.fill(<array>, value)` - fills array with given value.
 - `Arrays.toString(<array>)` - to print array to screen.
