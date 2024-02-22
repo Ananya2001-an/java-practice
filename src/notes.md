@@ -41,6 +41,7 @@
 - `Arrays.copyOf(original array, new length)` - returns a copy of the array with new size; bigger.
 - `Arrays.copyOfRange(array, start index, end index)` - creates subarray from start to end- 1 index.
 - `Arrays.sort(<array>, Collections.reverseOrder())` - reverse sort an array.
+- `Arrays.stream(dp).max().orElse(0)` can be understood as finding the maximum value in the array dp, or returning 0 if the array is empty.
 
 - For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
 - `<arraylist>.add(ele)` - adds an element to the arraylist.
