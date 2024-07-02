@@ -9,6 +9,7 @@
 - `<str>.replaceFirst(old str, new str)` - replaces old substring in string with new one. **Need to reassign to see changes. Doesn't do inplace mutation.**
 - `<str1>.concat(<str2>)` - appends str2 to str1.
 - `<str>.endsWith(suffix)`
+- `<str>.contains(str)`
 - `<str>.startsWith(prefix)`
 - `<str1>.equals(<str2>)` - use it to compare strings rather than ==; "==" for chars
 - `<str>.isEmpty()`
@@ -26,6 +27,8 @@
 - `<strbuff>.insert(index, string)`
 - `<strbuff>.delete(start index, end index)`
 - `<strbuff>.deleteCharAt(index)`
+- `<strbuff>.setCharAt(index, char)`
+- `<strbuff>.replace(start, end, newstr)`
 - `<strbuff>.isEmpty()`
 - `<strbuff>.lastIndexOf(string)` and `<strbuff>.indexOf(string)`
   > new String(<char[] array>) will return a string from a char array.
