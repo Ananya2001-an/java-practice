@@ -66,6 +66,7 @@
 - `list.stream().mapToInt(i -> i).toArray()` - convert arraylist to int array.
 - `<arraylist>.iterator()` - returns an iterator object. Can use methods like hasNext() and next() on the object.
 - `<arraylist>.replaceAll(e -> e.toLowerCase())` - pass operator to replaceAll func to replace all values with new value.
+- List<Integer> list = new ArrayList(Arrays.asList(Arrays.copyOfRange(arr, 1, arr.length)));
 - we can create a new arraylist with a predefined size but it will still be empty. **It just defines capacity not size.** so if u do get u will get index out of bounds exception. 
 
 - `<hashmap>.put(key, value)` - adds a key-value pair to the hashmap.
