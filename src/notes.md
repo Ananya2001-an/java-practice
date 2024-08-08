@@ -1,5 +1,8 @@
 ### Most used Java methods
 - `<array>.length` - returns the length of the array.
+- for (int n : arr) {
+    System.out.println(n);
+  }
 - `<str>.length()` - returns the length of the string.
 - `<str>.toCharArray()` - returns a char array from a string.
 - `<str>.indexOf(<str>)` - returns index of the second string in first string if it exists else -1 returned.
@@ -36,6 +39,13 @@
 - `<strbuild>.append(<str>)`
 - `<strbuild>.reverse()`
 - `<strbuild>.toString()`
+> StringBuffer:
+Thread-safe: StringBuffer is synchronized, which means that it is thread-safe. Multiple threads can safely use a StringBuffer object without causing data inconsistency.
+Slower: Because of the synchronization overhead, operations on a StringBuffer object are generally slower compared to StringBuilder.
+
+> StringBuilder:
+Not Thread-safe: StringBuilder is not synchronized, so it is not thread-safe. It should be used in environments where you do not have to worry about multiple threads accessing the same instance simultaneously.
+Faster: Without synchronization, StringBuilder is generally faster and more efficient than StringBuffer.
 
 - `Arrays.sort(<array>)` - sorts the array in ascending order.
 - `Arrays.binarySearch(<array>, ele)` - searches for an element in the array and returns the index of the element if found else returns a negative value. Can also pass start and end index like this: **Arrays.binarySearch(<array>, low, high+1, target)**. If value not present in that part of the array it may give negative value but not -1.
