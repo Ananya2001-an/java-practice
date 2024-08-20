@@ -62,6 +62,7 @@ Faster: Without synchronization, StringBuilder is generally faster and more effi
 - `<arraylist>.remove(index)` - removes an element at index from the arraylist.
 - `<arraylist>.get(index)` - returns the element at the specified index.
 - `<arraylist>.set(index, ele)` - sets the element at the specified index.
+- `<arraylist>.subList(start, end)` - returns sub list from given array list based on start and end indices.
 - `<arraylist>.clear()` - removes all the elements from the arraylist.
 - `<arraylist>.isEmpty()` - returns true if the arraylist is empty else returns false.
 - `<arraylist>.toString()` - converts the arraylist to a string.
@@ -99,6 +100,22 @@ Faster: Without synchronization, StringBuilder is generally faster and more effi
 - `<hashmap>.toString()` - to print hashmap to console.
 - `Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey()` - gets key for max value.
 - `Collection.max(map.values())` - get max value.
+- `TreeMap<String, Integer> treemap = new TreeMap<String, Integer>();` - stores keys in sorted order.
+- ```java
+    List<String> products = new ArrayList(Arrays.asList(new String[]{"mobile","mouse","moneypot","monitor","mousepad"}));
+    TreeMap<String, Integer> treemap = new TreeMap<String, Integer>();
+        for(int i=0; i<products.size(); i++)
+        {
+          treemap.put(products.get(i), i);
+        }
+  ```
+- System.out.println(treemap); - by default ascending order
+- System.out.println(treemap.descendingMap()); - print map in descending order
+- System.out.println(treemap.headMap("mou")); -> gives keys strictly less than key. `{mobile=0, moneypot=2, monitor=3}`
+- System.out.println(treemap.tailMap("mou")); -> gives keys equal or greater than the given key. `{mouse=1, mousepad=4}`
+- System.out.println(treemap.ceilingKey("mou")); -> Returns the least key greater than or equal to the given key.`mouse`
+- System.out.println(treemap.floorKey("mou")); -> Returns the greatest key less than or equal to the given key. `monitor`
+- System.out.println(treemap.floorKey("mou" + "~")); `mousepad`
 
 > Stack<> stack = new Stack<>();
 
