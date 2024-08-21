@@ -1,4 +1,8 @@
 ### Most used Java methods
+- REGEX
+- 
+
+
 - `<array>.length` - returns the length of the array.
 - for (int n : arr) {
     System.out.println(n);
@@ -100,8 +104,10 @@ Faster: Without synchronization, StringBuilder is generally faster and more effi
 - `<hashmap>.toString()` - to print hashmap to console.
 - `Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey()` - gets key for max value.
 - `Collection.max(map.values())` - get max value.
+- `Collections.swap(list, start, end);` - swap the elements at the start and end indices
+
 - `TreeMap<String, Integer> treemap = new TreeMap<String, Integer>();` - stores keys in sorted order.
-- ```java
+```java
     List<String> products = new ArrayList(Arrays.asList(new String[]{"mobile","mouse","moneypot","monitor","mousepad"}));
     TreeMap<String, Integer> treemap = new TreeMap<String, Integer>();
         for(int i=0; i<products.size(); i++)
