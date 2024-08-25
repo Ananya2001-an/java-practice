@@ -60,6 +60,8 @@ Faster: Without synchronization, StringBuilder is generally faster and more effi
 - `Arrays.copyOfRange(array, start index, end index)` - creates subarray from start to end- 1 index.
 - `Arrays.sort(<array>, Collections.reverseOrder())` - reverse sort an array.
 - `Arrays.stream(dp).max().orElse(0)` can be understood as finding the maximum value in the array dp, or returning 0 if the array is empty.
+- `Arrays.stream(arr).min().getAsInt()` - gives min element in array (primitive dt) -> int
+- `Collections.min(Arrays.asList(arr))` - gives min element in array (non-primitive dt) -> Integer
 
 - For printing arraylist to the screen no need to call **Arrays.toString()** method. Just use `System.out.println(<arraylist>)`.
 - `<arraylist>.add(ele)` - adds an element to the arraylist.
