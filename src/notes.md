@@ -215,6 +215,32 @@ so current is also null. now if head = new node() then make sure to do current =
 
 - **Bitwise AND of any 2 numbers always results in a value that is less than or equal to the smaller of the 2 numbers.** 
 
+- **Dutch partition algo (sorting algo / 3-way partition algo)**
+  ```java
+      class Solution {
+        public void sortColors(int[] nums) {
+            int low = 0, mid = 0, high = nums.length - 1;
+            while (mid <= high) {
+                if (nums[mid] == 0) {
+                    swap(nums, low, mid);
+                    low++;
+                    mid++;
+                } else if (nums[mid] == 1) {
+                    mid++;
+                } else {
+                    swap(nums, mid, high);
+                    high--;
+                }
+            }
+        }
+        
+        private void swap(int[] nums, int i, int j) {
+            int temp = nums[i];
+            nums[i] = nums[j];
+            nums[j] = temp;
+        }
+    }
+  ```
 
 ### Most used Java Packages/Classes
 - `Scanner` class from `java.util` package
