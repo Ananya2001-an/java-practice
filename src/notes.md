@@ -2,7 +2,7 @@
 - REGEX
 - 
 
-
+- `Math.gcd(a, b)` to find gcd of 2 nos.
 - `<array>.length` - returns the length of the array.
 - for (int n : arr) {
     System.out.println(n);
