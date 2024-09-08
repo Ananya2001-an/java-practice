@@ -12,7 +12,7 @@
 - `<str>.indexOf(<str>)` - returns index of the second string in first string if it exists else -1 returned.
 - `<str>.indexOf(<str>, start index)` - returns index of the second string in first string from given start index.
 - `<str>.contains(<str>)` - returns true if second string exists as a substring in the first one.
-- `<str>.replace(old char, new char)` - replaces old char in string with new one. **Need to reassign to see changes. Doesn't do inplace mutation.**
+- `<str>.replace(old char, new char)` - replaces old char in string with new one. **Need to reassign to see changes. Doesn't do inplace mutation.** All chars are replaced.
 - `<str>.replaceFirst(old str, new str)` - replaces old substring in string with new one. **Need to reassign to see changes. Doesn't do inplace mutation.**
 - `<str1>.concat(<str2>)` - appends str2 to str1.
 - `<str>.endsWith(suffix)`
