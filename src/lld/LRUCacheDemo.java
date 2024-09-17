@@ -8,18 +8,22 @@
  *  Use a LinkedList (DLL) to maintain order of cache elements in terms of when last used
  *  Now when I want to get an element I want the access time to be O(1) but L.L will be O(n) so we use a HashMap instead as our actual cache
  *  in hashmap we store (key, value), where value is the actual node of L.L; this makes it easier to move it to the head of L.L marking it as most recently used
+ *  The cache should be thread-safe, allowing concurrent access from multiple threads. Use synchronised keyword for get and put methods.
  */
-
-package lld;
 
 import java.util.*;
 
-// DLL makes it easy to move node to other location by just changing ptrs
+// DLL makes it easy to move node to other location by just changing pointers
 class Node<K, V>{
     K key;
     V value;
     Node<K, V> next;
     Node<K, V> prev;
+
+    public Node(K key, V value) {
+        this.key = key;
+        this.value = value;
+    }
 }
 
 
@@ -35,12 +39,14 @@ class LRUCache<K, V>{
         // create a hashmap of predefined size
         // when you call size() it will return no of elements in cache
         cache = new HashMap<>(capacity);
-        // intialize head and tail ptrs
+        // initialize head and tail pointers
         head = new Node<>(null, null);
         tail = new Node<>(null, null);
+        head.next = tail;
+        tail.prev = head;
     }
 
-    public V get(K key){
+    public synchronized V get(K key){
         Node<K, V> node = cache.get(key);
         // node not present in cache so return null
         if(node == null) return null;
@@ -49,7 +55,7 @@ class LRUCache<K, V>{
         return node.value;
     }
 
-    public void put(K key, V value){
+    public synchronized void put(K key, V value){
         Node<K, V> node = cache.get(key);
         if(node != null) {
             node.value = value;
@@ -57,7 +63,7 @@ class LRUCache<K, V>{
             return;
         }
         
-        node = New Node<>(key, value);
+        node = new Node<>(key, value);
         // remove LRU element from L.L and cache
         if(cache.size() == capacity){
             Node<K, V> removedNode = removeTail();
@@ -68,17 +74,15 @@ class LRUCache<K, V>{
     }
 
     private void addToHead(Node<K, V> node){
-        head.prev = node;
-        node.next = head;
-        head = node;
-        node.prev = null;
+        node.prev = head;
+        node.next = head.next;
+        head.next.prev = node;
+        head.next = node;
     }
 
     private void moveToHead(Node<K, V> node){
         removeNode(node);
-        node.next = head;
-        head.prev = node;
-        node.prev = null;
+        addToHead(node);
     }
 
     private void removeNode(Node<K, V> node){
@@ -87,9 +91,9 @@ class LRUCache<K, V>{
     }
 
     private Node<K, V> removeTail(){
-        removeNode(tail);
-        tail = tail.prev;
-        return tail;
+        Node<K, V> node = tail.prev;
+        removeNode(node);
+        return node;
     }
 }
 
@@ -115,4 +119,4 @@ public class LRUCacheDemo{
         System.out.println(cache.get(1)); // Output: Value 1
         System.out.println(cache.get(2)); // Output: Updated Value 2
     }
-} 
+}
