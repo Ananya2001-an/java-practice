@@ -152,6 +152,8 @@ Faster: Without synchronization, StringBuilder is generally faster and more effi
 - `<queue>.contains(ele)` - returns true if the queue contains the specified element else returns false.
 - `<queue>.toArray(new <type>[<queue>.size()])` - converts queue to array.
 - `<priorityqueue>.poll()` - returns smallest element. If **Collections.reverseOrder()** passed during initialization, then we get larget element each time.
+
+- **ArrayDeque<TreeNode> q = new ArrayDeque();** this is only how you have to create a Deque instance.
 - `<arraydeque>.removeFirst()`, `<arraydeque>.removeLast()`, `<arraydeque>.getFirst()`, `<arraydeque>.getLast()`, `<arraydeque>.addFirst()`, `<arraydeque>.addLast()` are some extra methods provided by `ArrayDeque` class. All above methods also present. Just make sure that the instance type is Deque not Queue or else you will get compiler error.
 - `Collections.addAll(queue, array)` - creates queue from array elements.
 - `Collections.sort(<arraylist>)`
