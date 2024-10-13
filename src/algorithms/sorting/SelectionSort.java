@@ -1,8 +1,11 @@
-```java
 import java.util.*;
 
+/**
+ * here, first element gets sorted first
+ * worst case T.C. -> O(n^2)
+ * inplace, stable, not adaptive
+ */
 public class SelectionSort{
-
     void sort(int arr[])
     {
         int n = arr.length;
@@ -42,4 +45,3 @@ public class SelectionSort{
         System.out.println("Took " + executionTime + "ms");
     }
 }
-```
