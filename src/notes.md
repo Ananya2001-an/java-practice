@@ -168,6 +168,7 @@ Faster: Without synchronization, StringBuilder is generally faster and more effi
 
 - `Integer.MAX_VALUE` gives max int value.
 - `Integer.toBinaryString(<int>)` - to get binary representation for an int value.
+- `Integer.bitCount(x)` - counts the set bits
 - Scanner s = new Scanner(System.in); s.nextLine() will read whole line with spaces as well. But s.next() will terminate if any space is given.
 
 - ```java
